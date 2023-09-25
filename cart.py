@@ -5,7 +5,7 @@ from sqlalchemy import inspect
 import requests
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://products_dllq_user:NoUJV5CLjQZj95ocMj0SzzUBoBVDuSHR@dpg-ck8do508elhc73fvf1og-a/products_dllq'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://carts_products_service_user:gHUTZN3ntf8giUDIU6V5lEj8SyOU6cUA@dpg-ck8fquo8elhc7388rmhg-a/carts_products_service'
 db = SQLAlchemy(app)
 
 # Cart Model
