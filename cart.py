@@ -16,7 +16,7 @@ class Cart(db.Model):
 
 class Cart_Item(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    cart_id = db.Column(db.Integer, nullable=False)
+    cart_id = db.Column(db.Integer, db.ForeignKey('cart.id'), nullable=False)
     product_id = db.Column(db.Integer, nullable=False)
     product_quantity = db.Column(db.Integer, nullable=False)
 
